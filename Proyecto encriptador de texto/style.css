@@ -1,0 +1,131 @@
+* {
+    background: transparent;
+    font-family: "Lilita One", sans-serif;
+    font-size: 32px;
+    font-weight: 300px;
+    line-height: 120%;
+}
+
+body {
+    background-image: url('back.png.jfif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    background-attachment: fixed;
+    background-color: #f0f0f0; /* Color de fondo si la imagen no se carga */
+    margin: 0;
+    font-family: "Lilita One", sans-serif;
+    padding: 0;
+}
+
+
+h1 {
+    font-family: "Lilita One", sans-serif;
+    color: #22223b;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 5px;
+    padding: 0;
+}
+
+
+.logo {
+    padding-top: 1px;
+    margin-left: 50px;
+    width: 2%;
+}
+
+main {
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 80px;
+}
+
+.text-area { 
+    background: transparent;
+    font-family: "Lilita One", sans-serif;
+    border: none;
+    color: #22223b;
+    margin-top: 70px;
+    text-transform: lowercase;
+ }
+ ::placeholder { color: #22223b; }
+   .text-area:focus{
+        background: transparent;
+        outline: none;
+    }
+
+.mensaje{
+    background: transparent;
+    background-image: url(ratto-removebg-preview.png);
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 24px;
+    color: #22223b;
+    margin-left: 98px;
+    margin-top: 20px;
+    padding-left: 20px;
+    position: absolute;
+}
+.mensaje:focus {
+    outline: none;
+}
+
+.botones {
+    display: flex;
+    margin-top: 18px;
+}
+
+.btn-desencriptar, .btn-encriptar {
+    background-color: #9d8189;
+    border: 2px solid #f4acb7;
+    border-radius: 24px;
+    color: #f4acb7;
+    cursor: pointer;
+    height: 65px;
+    margin-top: 1px;
+    width: 300px;
+    font-size: 25px; /* Ajusta el tamaño de fuente si es necesario */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.copiar {
+    background-color: #9d8189;
+    border: 2px solid #f4acb7;
+    border-radius: 24px;
+    color: #f4acb7;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 108px;
+    margin-top: 475px;
+    position: absolute;
+    width: 328px;
+}
+
+.btn-desencriptar:hover, .btn-encriptar:hover, .copiar:hover {
+    background-color: #f4acb7;
+    color: #9d8189;
+}
+
+.informacion {
+    color: #22223b;
+    font-size: 15px
+}
+
+@media (max-width: 768px) {
+    .logo {
+        width: 50px;
+    }
+
+    .btn-desencriptar, .btn-encriptar, .copiar {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .mensaje {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
